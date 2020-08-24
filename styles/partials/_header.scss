@@ -1,0 +1,27 @@
+//1. Change colours on nav hover
+//2. Add underscore on nav hover
+//3. Add animation for h1
+//4. Add blinking cursor effect: https://html-online.com/articles/blinking-text-css-animation/
+
+header {
+    min-height: 70vh;
+    background-color: #073642;
+
+    ul {
+        display: flex;
+        padding-top: 50px;
+
+        li {
+            margin-right: 50px;
+
+            a {
+                color: $inactiveTextColour;
+
+            }
+        }
+    }
+
+    .heading {
+        margin-top: 200px;
+    }
+}
