@@ -9,8 +9,14 @@ html {
 }
 
 body {
-    font-size: 2rem;
+    background-color: $backgroundColour;
     color: $primaryTextColour;
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+    // height: 100%;
 }
 
 li {
@@ -25,4 +31,12 @@ a {
     max-width: 1400px;
     width: 90%;
     margin: 0 auto;
+}
+
+i {
+    font-size: 6rem;
+}
+
+.iconify {
+    font-size: 7rem;
 }

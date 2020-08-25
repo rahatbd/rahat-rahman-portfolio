@@ -1,0 +1,83 @@
+.about {
+    // background-color: #030200;
+    border-bottom: 2px solid white;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 50px 0;
+
+    h2, div p:first-of-type {
+        margin-bottom: 20px;
+    }
+}
+
+.skills {
+    border-bottom: 2px solid white;
+    padding: 50px 0;
+
+    h2 {
+        //not DRY
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(7, 120px);
+        grid-template-rows: repeat(2, 120px);
+        justify-content: center;
+        // align-content: center;
+        gap: 40px;
+        // margin: 0 auto;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            i, .iconify {
+                // font-size: 6rem;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+.projects {
+    border-bottom: 2px solid white;
+    padding: 50px 0;
+
+    h2 {
+        //not DRY
+        margin-bottom: 20px;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(6, 120px);
+
+            //not dry
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+
+                i, .iconify {
+                    font-size: 4rem;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

@@ -196,8 +196,13 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  background-color: #030200;
   color: #f8f8f8;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 li {
@@ -214,9 +219,17 @@ a {
   margin: 0 auto;
 }
 
+i {
+  font-size: 6rem;
+}
+
+.iconify {
+  font-size: 7rem;
+}
+
 header {
   min-height: 70vh;
-  background-color: #073642;
+  border-bottom: 2px solid white;
 }
 
 header ul {
@@ -236,4 +249,107 @@ header ul li a {
 
 header .heading {
   margin-top: 200px;
+}
+
+.about {
+  border-bottom: 2px solid white;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 50px 0;
+}
+
+.about h2, .about div p:first-of-type {
+  margin-bottom: 20px;
+}
+
+.skills {
+  border-bottom: 2px solid white;
+  padding: 50px 0;
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+}
+
+.skills .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (120px)[7];
+      grid-template-columns: repeat(7, 120px);
+  -ms-grid-rows: (120px)[2];
+      grid-template-rows: repeat(2, 120px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.skills .icons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .icons li i, .skills .icons li .iconify {
+  padding-bottom: 10px;
+}
+
+.projects {
+  border-bottom: 2px solid white;
+  padding: 50px 0;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.projects .project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.projects .project h3 {
+  margin-bottom: 20px;
+}
+
+.projects .project .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (120px)[6];
+      grid-template-columns: repeat(6, 120px);
+}
+
+.projects .project .icons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.projects .project .icons li i, .projects .project .icons li .iconify {
+  font-size: 4rem;
+  padding-bottom: 10px;
 }
