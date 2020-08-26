@@ -206,6 +206,23 @@ img {
   max-width: 100%;
 }
 
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+h2::after {
+  content: "_";
+  position: absolute;
+  -webkit-animation: blink 1s ease infinite;
+          animation: blink 1s ease infinite;
+}
+
 li {
   list-style-type: none;
 }
@@ -214,10 +231,12 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  max-width: 1400px;
-  width: 90%;
-  margin: 0 auto;
+header, section {
+  border-bottom: 1px solid white;
+}
+
+section {
+  padding: 50px 0;
 }
 
 i {
@@ -274,7 +293,6 @@ i {
 
 header {
   min-height: 100vh;
-  border-bottom: 1px solid white;
 }
 
 header ul {
@@ -345,15 +363,21 @@ header .fa-mouse {
   cursor: pointer;
 }
 
-.about {
-  border-bottom: 2px solid white;
-  line-height: 1.6;
-  text-align: justify;
-  padding: 50px 0;
+.about .aboutSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 40px;
 }
 
-.about h2, .about div p:first-of-type {
-  margin-bottom: 20px;
+.about .aboutSection p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about .aboutSection p:first-of-type {
+  padding-bottom: 20px;
 }
 
 .skills {

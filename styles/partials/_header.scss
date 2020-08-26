@@ -1,8 +1,9 @@
-// Make nav fixed on scroll
+//make nav fixed on scroll
+//check casing on nav
+//check inactive colour contrast: use #A8A8A8
 
 header {
     min-height: 100vh;
-    border-bottom: 1px solid white;
 
     ul {
         display: flex;
@@ -18,10 +19,7 @@ header {
 
                 &:hover, &:active, &:focus {
                     color: $primaryTextColour;
-
-                    &::after {
-                        @include blink;
-                    }
+                    @include blink;
                 }
             }
         }
@@ -44,10 +42,7 @@ header {
 
         h1 {
             position: relative;
-
-            &::after {
-                @include blink;
-            }
+            @include blink;
         }
     }
 

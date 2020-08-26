@@ -1,0 +1,20 @@
+.about {
+    .aboutSection {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+
+        // div {
+        //     // border: 1px solid crimson;
+        // }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+
+            &:first-of-type {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

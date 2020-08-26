@@ -20,6 +20,19 @@ img {
     // height: auto;
 }
 
+.wrapper {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    // border: 1px solid wheat;
+}
+
+h2 {
+    // text-align: center;
+    padding-bottom: 20px;
+    @include blink;
+}
+
 li {
     list-style-type: none;
 }
@@ -28,11 +41,12 @@ a {
     text-decoration: none;
 }
 
-.wrapper {
-    max-width: 1400px;
-    width: 90%;
-    margin: 0 auto;
-    // border: 1px solid wheat;
+header, section {
+    border-bottom: 1px solid white;
+}
+
+section {
+    padding: 50px 0;
 }
 
 i {

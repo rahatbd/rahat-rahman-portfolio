@@ -3,8 +3,12 @@ $primaryTextColour: #fafafa;
 $inactiveTextColour: #757575;
 $primaryFontFamily: 'Roboto Mono', monospace;
 
+// $backgroundColour: #030200;
+
 @mixin blink {
-    content: "_";
-    position: absolute;
-    animation: blink 1s ease infinite;
+    &::after {
+        content: "_";
+        position: absolute;
+        animation: blink 1s ease infinite;
+    }
 }
