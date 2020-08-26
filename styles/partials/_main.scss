@@ -52,32 +52,45 @@
         margin-bottom: 20px;
     }
 
-    .project {
+    .projectList {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 40px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 630px;
 
-        h3 {
-            margin-bottom: 20px;
+        .projectOne, .projectThree {
+            border-right: 2px solid white;
         }
 
-        .icons {
-            display: grid;
-            grid-template-columns: repeat(6, 120px);
+        .projectOne, .projectTwo {
+            border-bottom: 2px solid white;
+        }
 
-            //not dry
-            li {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 10px 0;
+        .projectThree, .projectFour {
+            // padding-top: 100px;
+        }
 
-                i, .iconify {
-                    font-size: 4rem;
-                    padding-bottom: 10px;
-                }
+        .project {
+            padding: 30px 20px;
+
+            h3 {
+                padding: 10px 0;
             }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+             p:nth-of-type(2) {
+                border-top: 2px double white;
+                border-bottom: 2px double white;
+                padding: 5px 0;
+             }
+
+             a {
+                 background-color: crimson;
+                 color: white;
+                 padding: 5px 10px;
+             }
         }
     }
 }

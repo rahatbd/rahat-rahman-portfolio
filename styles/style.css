@@ -313,43 +313,43 @@ header .heading {
   margin-bottom: 20px;
 }
 
-.projects .project {
+.projects .projectList {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 630px;
+      grid-template-rows: 630px;
 }
 
-.projects .project h3 {
+.projects .projectList .projectOne, .projects .projectList .projectThree {
+  border-right: 2px solid white;
+}
+
+.projects .projectList .projectOne, .projects .projectList .projectTwo {
+  border-bottom: 2px solid white;
+}
+
+.projects .projectList .project {
+  padding: 30px 20px;
+}
+
+.projects .projectList .project h3 {
+  padding: 10px 0;
+}
+
+.projects .projectList .project p {
   margin-bottom: 20px;
 }
 
-.projects .project .icons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (120px)[6];
-      grid-template-columns: repeat(6, 120px);
+.projects .projectList .project p:nth-of-type(2) {
+  border-top: 2px double white;
+  border-bottom: 2px double white;
+  padding: 5px 0;
 }
 
-.projects .project .icons li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0;
-}
-
-.projects .project .icons li i, .projects .project .icons li .iconify {
-  font-size: 4rem;
-  padding-bottom: 10px;
+.projects .projectList .project a {
+  background-color: crimson;
+  color: white;
+  padding: 5px 10px;
 }
