@@ -77,4 +77,4 @@ class TextScramble {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
 
-} 
+}
