@@ -1,5 +1,11 @@
-$backgroundColour: #030200;
-// $backgroundColour: #202020;
-// $backgroundColour: #31313a;
-$primaryTextColour: #f8f8f8;
-$inactiveTextColour: #708090;
+$backgroundColour: #212121;
+$primaryTextColour: #fafafa;
+// $inactiveTextColour: #708090;
+$inactiveTextColour: #757575;
+$primaryFontFamily: 'Roboto Mono', monospace;
+
+@mixin blink {
+    content: "_";
+    position: absolute;
+    animation: blink 1s infinite;
+}

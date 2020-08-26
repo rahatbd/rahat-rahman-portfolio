@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c3eced3f24.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <title>Rahat Rahman | Portfolio</title>
 </head>
+
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper head">
             <nav>
                 <ul>
+                    <!-- add id's -->
                     <li><a href="">About</a></li>
                     <li><a href="">Skills</a></li>
                     <li><a href="">Projects</a></li>
@@ -22,11 +25,12 @@
                 </ul>
             </nav>
             <div class="heading">
-                <h1>Hello! I'm Rahat Rahman!</h1>
-                <h2>I am a front-end web developer based in Toronto, ON.</h2>
+                <h1 class="name"></h1>
+                <p>I am <span class="typed"></span></p>
             </div>
         </div>
     </header>
+
     <main>
         <section class="about">
             <div class="wrapper">
@@ -149,5 +153,20 @@
             </div>
         </section>
     </main>
+
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js' integrity='sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- check -->
+    <script src="scripts/scramble.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        const options = {
+            strings: ['a front-end web developer.', 'based in Toronto.'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true,
+        }
+        const typed = new Typed('.typed', options);
+    </script>
 </body>
 </html>

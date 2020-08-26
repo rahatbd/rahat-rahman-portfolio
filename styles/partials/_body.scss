@@ -1,4 +1,4 @@
-// check default margin / padding
+// check elements
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -9,14 +9,15 @@ html {
 }
 
 body {
-    background-color: $backgroundColour;
+    font-family: $primaryFontFamily;
     color: $primaryTextColour;
+    background-color: $backgroundColour;
     font-size: 2rem;
 }
 
 img {
     max-width: 100%;
-    // height: 100%;
+    // height: auto;
 }
 
 li {
@@ -31,6 +32,7 @@ a {
     max-width: 1400px;
     width: 90%;
     margin: 0 auto;
+    // border: 1px solid wheat;
 }
 
 i {
@@ -39,4 +41,17 @@ i {
 
 .iconify {
     font-size: 7rem;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $primaryTextColour;
+  }
 }

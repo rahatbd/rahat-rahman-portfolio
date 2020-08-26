@@ -196,8 +196,9 @@ html {
 }
 
 body {
-  background-color: #030200;
-  color: #f8f8f8;
+  font-family: "Roboto Mono", monospace;
+  color: #fafafa;
+  background-color: #212121;
   font-size: 2rem;
 }
 
@@ -227,8 +228,30 @@ i {
   font-size: 7rem;
 }
 
+.typed-cursor {
+  display: none;
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fafafa;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fafafa;
+  }
+}
+
 header {
-  min-height: 70vh;
+  min-height: 100vh;
   border-bottom: 2px solid white;
 }
 
@@ -236,6 +259,9 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 50px;
 }
 
@@ -244,11 +270,45 @@ header ul li {
 }
 
 header ul li a {
-  color: #708090;
+  color: #757575;
+  position: relative;
+}
+
+header ul li a:hover, header ul li a:active, header ul li a:focus {
+  color: #fafafa;
+}
+
+header ul li a:hover::after, header ul li a:active::after, header ul li a:focus::after {
+  content: "_";
+  position: absolute;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+header ul li:last-child {
+  margin-right: 0;
 }
 
 header .heading {
-  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+
+header .heading h1 {
+  position: relative;
+}
+
+header .heading h1::after {
+  content: "_";
+  position: absolute;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
 }
 
 .about {
