@@ -22,4 +22,12 @@ portfolioApp.init = () => {
 
 $(document).ready(function() {
     portfolioApp.init();
+    const options = {
+        strings: ['a front-end web developer.', 'based in Toronto.'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true,
+    }
+    const typed = new Typed('.typed', options);
+    console.log(options);
 })
