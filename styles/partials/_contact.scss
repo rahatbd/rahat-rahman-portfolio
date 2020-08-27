@@ -9,6 +9,10 @@ form {
         background: transparent;
         color: $primaryTextColour;
         margin-bottom: 20px;
+
+        &:focus {
+            outline: 2px solid white;
+        }
     }
     
     input {
@@ -29,8 +33,7 @@ form {
         &:hover, &:active, &:focus {
             background-color: $primaryTextColour;
             color: $backgroundColour;
+            font-weight: 700;
         }
     }
 }
-
-//add all the active states

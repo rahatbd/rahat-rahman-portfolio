@@ -423,6 +423,11 @@ header .fa-mouse {
           transform: scale(1.1);
 }
 
+.skills .icons li i:hover path, .skills .icons li i:active path, .skills .icons li i:focus path, .skills .icons li .iconify:hover path, .skills .icons li .iconify:active path, .skills .icons li .iconify:focus path {
+  -webkit-transform: translateY(-1px) scale(1.1);
+          transform: translateY(-1px) scale(1.1);
+}
+
 .skills .icons li .fa-terminal {
   -webkit-animation: blink 1s ease infinite;
           animation: blink 1s ease infinite;
@@ -501,6 +506,10 @@ form input, form textarea, form button {
   margin-bottom: 20px;
 }
 
+form input:focus, form textarea:focus, form button:focus {
+  outline: 2px solid white;
+}
+
 form input {
   padding: 5px 10px;
 }
@@ -520,4 +529,5 @@ form button {
 form button:hover, form button:active, form button:focus {
   background-color: #fafafa;
   color: #212121;
+  font-weight: 700;
 }
