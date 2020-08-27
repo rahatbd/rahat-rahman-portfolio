@@ -1,0 +1,36 @@
+form {
+    // border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    input, textarea, button {
+        border: 1px solid white;
+        background: transparent;
+        color: $primaryTextColour;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        padding: 5px 10px;
+    }
+
+    textarea {
+        resize: none;
+        padding: 5px 10px;
+    }
+
+    button {
+        text-transform: uppercase;
+        padding: 5px 25px;
+        margin: 0 auto 0 0;
+        cursor: pointer;
+
+        &:hover, &:active, &:focus {
+            background-color: $primaryTextColour;
+            color: $backgroundColour;
+        }
+    }
+}
+
+//add all the active states
