@@ -1,6 +1,5 @@
 //make nav fixed on scroll
 //check casing on nav
-//check inactive colour contrast: use #A8A8A8
 
 header {
     min-height: 100vh;
@@ -48,7 +47,7 @@ header {
 
     .fa-mouse {
         font-size: 4rem;
-        color: #f26b38;
+        color: $iconHoverColour;
         display: block;
         text-align: center;
         margin-top: 600px;

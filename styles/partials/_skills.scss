@@ -1,32 +1,36 @@
 .skills {
-    border-bottom: 2px solid white;
-    padding: 50px 0;
-
-    h2 {
-        //not DRY
-        margin-bottom: 20px;
-    }
-
     .icons {
         display: grid;
         grid-template-columns: repeat(7, 120px);
         grid-template-rows: repeat(2, 120px);
         justify-content: center;
-        // align-content: center;
-        gap: 40px;
-        // margin: 0 auto;
+        align-content: center;
+        column-gap: 60px;
+        row-gap: 40px;
 
         li {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
+
+            //check general styles
             i, .iconify {
-                // font-size: 6rem;
                 padding-bottom: 10px;
+
+                &:hover, &:active, &:focus {
+                    color: $iconHoverColour;
+                    transform: scale(1.1);
+                }
+            }
+
+            .fa-terminal {
+                animation: blink 1s ease infinite;
+
+                &:hover, &:active, &:focus {
+                    animation: none;
+                }
             }
         }
     }
-
 }

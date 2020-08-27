@@ -310,7 +310,7 @@ header ul li {
 }
 
 header ul li a {
-  color: #757575;
+  color: #ababab;
   position: relative;
 }
 
@@ -380,15 +380,6 @@ header .fa-mouse {
   padding-bottom: 20px;
 }
 
-.skills {
-  border-bottom: 2px solid white;
-  padding: 50px 0;
-}
-
-.skills h2 {
-  margin-bottom: 20px;
-}
-
 .skills .icons {
   display: -ms-grid;
   display: grid;
@@ -399,7 +390,11 @@ header .fa-mouse {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 40px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 40px;
 }
 
 .skills .icons li {
@@ -420,6 +415,22 @@ header .fa-mouse {
 
 .skills .icons li i, .skills .icons li .iconify {
   padding-bottom: 10px;
+}
+
+.skills .icons li i:hover, .skills .icons li i:active, .skills .icons li i:focus, .skills .icons li .iconify:hover, .skills .icons li .iconify:active, .skills .icons li .iconify:focus {
+  color: #f26b38;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.skills .icons li .fa-terminal {
+  -webkit-animation: blink 1s ease infinite;
+          animation: blink 1s ease infinite;
+}
+
+.skills .icons li .fa-terminal:hover, .skills .icons li .fa-terminal:active, .skills .icons li .fa-terminal:focus {
+  -webkit-animation: none;
+          animation: none;
 }
 
 .projects {

@@ -2,18 +2,14 @@ const portfolioApp = {}
 
 portfolioApp.scrambleText = () => {
     const phrases = ['Rahat Rahman'];
-    const el = document.querySelector('.name');
-    // const el = $(".name");
-    const fx = new TextScramble(el);
+    const el2 = $(".name");
+    const fx = new TextScramble(el2[0]);
     let counter = 0;
 
     const next = () => {
         fx.setText(phrases[counter]).then(() => {
-            setTimeout(next, 10000);
+            setTimeout(next, 5000);
         });
-        // fx.text(phrases[counter]).then(() => {
-        //     setTimeout(next, 10000);
-        // });
         counter = (counter + 1) % phrases.length;
     }
 
