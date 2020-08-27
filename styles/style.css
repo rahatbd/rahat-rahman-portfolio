@@ -433,52 +433,52 @@ header .fa-mouse {
           animation: none;
 }
 
-.projects {
-  border-bottom: 2px solid white;
-  padding: 50px 0;
-}
-
-.projects h2 {
-  margin-bottom: 20px;
-}
-
-.projects .projectList {
+.projects .project {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 630px;
-      grid-template-rows: 630px;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  border-bottom: 1px solid white;
 }
 
-.projects .projectList .projectOne, .projects .projectList .projectThree {
-  border-right: 2px solid white;
+.projects .project img {
+  padding: 20px 0;
 }
 
-.projects .projectList .projectOne, .projects .projectList .projectTwo {
-  border-bottom: 2px solid white;
+.projects .project .description {
+  border-left: 1px solid white;
+  padding: 20px 0 0 20px;
 }
 
-.projects .projectList .project {
-  padding: 30px 20px;
+.projects .project .description h3 {
+  text-transform: uppercase;
 }
 
-.projects .projectList .project h3 {
-  padding: 10px 0;
+.projects .project .description p {
+  text-align: justify;
 }
 
-.projects .projectList .project p {
-  margin-bottom: 20px;
+.projects .project .description p:nth-of-type(2) {
+  padding-bottom: 30px;
 }
 
-.projects .projectList .project p:nth-of-type(2) {
-  border-top: 2px double white;
-  border-bottom: 2px double white;
-  padding: 5px 0;
+.projects .project .description h3, .projects .project .description p {
+  padding-bottom: 15px;
 }
 
-.projects .projectList .project a {
-  background-color: crimson;
-  color: white;
+.projects .project .description a {
+  background-color: #fafafa;
+  color: #212121;
   padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.projects .project .description a:hover, .projects .project .description a:active, .projects .project .description a:focus {
+  background-color: #212121;
+  color: #fafafa;
+}
+
+.projects .projectFour {
+  border-bottom: none;
 }
