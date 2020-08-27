@@ -1,39 +1,66 @@
-form {
-    // border: 1px solid wheat;
+.social {
     display: flex;
-    flex-direction: column;
-    width: 60%;
 
-    input, textarea, button {
-        border: 1px solid white;
-        background: transparent;
-        color: $primaryTextColour;
-        margin-bottom: 20px;
-
-        &:focus {
-            outline: 2px solid white;
+    form {
+        // border: 1px solid wheat;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        input, textarea, button {
+            border: 1px solid white;
+            background: transparent;
+            color: $primaryTextColour;
+            margin-bottom: 20px;
+    
+            &:focus {
+                outline: 2px solid white;
+            }
+        }
+        
+        input {
+            padding: 5px 10px;
+        }
+    
+        textarea {
+            resize: none;
+            padding: 5px 10px;
+        }
+    
+        button {
+            text-transform: uppercase;
+            padding: 5px 25px;
+            margin: 0 auto 0 0;
+            cursor: pointer;
+    
+            &:hover, &:active, &:focus {
+                background-color: $primaryTextColour;
+                color: $backgroundColour;
+                font-weight: 700;
+            }
         }
     }
-    
-    input {
-        padding: 5px 10px;
-    }
 
-    textarea {
-        resize: none;
-        padding: 5px 10px;
-    }
+    form + div {
+        // border: 1px solid brown;
+        text-align: justify;
+        padding-left: 50px;
 
-    button {
-        text-transform: uppercase;
-        padding: 5px 25px;
-        margin: 0 auto 0 0;
-        cursor: pointer;
+        p {
+            padding-bottom: 20px;
+        }
 
-        &:hover, &:active, &:focus {
-            background-color: $primaryTextColour;
-            color: $backgroundColour;
-            font-weight: 700;
+        a {
+            color: $primaryTextColour;
+            margin-right: 20px;
+             
+            &:hover, &:active, &:focus {
+                color: $iconHoverColour;
+            }
+                
+            i {
+                font-size: 5rem;
+            }
         }
     }
 }
