@@ -7,6 +7,10 @@
                 width: 60%;
                 margin: 0 auto 20px;
             }
+
+            p {
+                margin-left: 0;
+            }
         }
     }
     .social {
@@ -17,6 +21,22 @@
 }
 
 @media (max-width: 775px) {
+    header {
+        ul {
+            justify-content: center;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .blog {
+        .post {
+            margin: 0 auto;
+        }
+    }
+
     .social {
         flex-direction: column;
 
@@ -53,8 +73,6 @@
 @media (max-width: 625px) {
     header {
         ul {
-            justify-content: center;
-
             li {
                 margin-right: 30px;
             }
@@ -70,12 +88,40 @@
             }
         }
     }
+
+    .skills {
+        .icons {
+            justify-content: center;
+        }
+    }
+
+    footer {
+        span {
+            display: block;
+            margin-top: 5px;
+        }
+    }
 }
 
 @media (max-width: 440px) {
+    .heading {
+        h1 {
+            line-height: 1.15;
+            margin-bottom: 10px;
+        }
+    }
+
+    .about {
+        .aboutSection {
+            p {
+                text-align: left;
+            }
+        }
+    }
+
     .blog {
         .post {
-            width: 300px;
+            max-width: 290px;
 
             a {
                 font-size: 2rem;
@@ -84,7 +130,14 @@
     }
 }
 
+//change to 360px???
 @media (max-width: 350px) {
+    .skills {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
     .projects {
         .project {
             .description {
@@ -103,11 +156,11 @@
 }
 
 //merge this
-@media (max-width: 340px) {
-    .heading {
-        h1 {
-            line-height: 1.15;
-            margin-bottom: 10px;
-        }
-    }
-}
+// @media (max-width: 340px) {
+//     .heading {
+//         h1 {
+//             line-height: 1.15;
+//             margin-bottom: 10px;
+//         }
+//     }
+// }

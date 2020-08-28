@@ -337,7 +337,7 @@ header .heading {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 90%;
+  width: 80%;
   line-height: 1.6;
   letter-spacing: 1.5px;
 }
@@ -384,9 +384,9 @@ header .fa-mouse {
       grid-template-columns: repeat(auto-fill, 120px);
   -ms-grid-rows: (120px)[auto-fill];
       grid-template-rows: repeat(auto-fill, 120px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
   gap: 40px 60px;
@@ -600,12 +600,26 @@ header .fa-mouse {
     width: 60%;
     margin: 0 auto 20px;
   }
+  .about .aboutSection p {
+    margin-left: 0;
+  }
   .social form {
     width: 120%;
   }
 }
 
 @media (max-width: 775px) {
+  header ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .blog .post {
+    margin: 0 auto;
+  }
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -637,11 +651,6 @@ header .fa-mouse {
 }
 
 @media (max-width: 625px) {
-  header ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   header ul li {
     margin-right: 30px;
   }
@@ -651,11 +660,27 @@ header .fa-mouse {
   header ul li {
     margin-bottom: 10px;
   }
+  .skills .icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer span {
+    display: block;
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 440px) {
+  .heading h1 {
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  .about .aboutSection p {
+    text-align: left;
+  }
   .blog .post {
-    width: 300px;
+    max-width: 290px;
   }
   .blog .post a {
     font-size: 2rem;
@@ -663,6 +688,9 @@ header .fa-mouse {
 }
 
 @media (max-width: 350px) {
+  .skills p {
+    font-size: 1.6rem;
+  }
   .projects .project .description a {
     display: block;
     width: 60%;
@@ -670,12 +698,5 @@ header .fa-mouse {
   }
   .projects .project .description a:last-child {
     margin: 0 0 0 auto;
-  }
-}
-
-@media (max-width: 340px) {
-  .heading h1 {
-    line-height: 1.15;
-    margin-bottom: 10px;
   }
 }
