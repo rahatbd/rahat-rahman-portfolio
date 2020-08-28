@@ -229,6 +229,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #fafafa;
 }
 
 header, section {
@@ -237,14 +238,6 @@ header, section {
 
 section {
   padding: 50px 0;
-}
-
-i {
-  font-size: 6rem;
-}
-
-.iconify {
-  font-size: 7rem;
 }
 
 .typed-cursor {
@@ -380,9 +373,6 @@ header .fa-mouse {
 .about .aboutSection p {
   line-height: 1.6;
   text-align: justify;
-}
-
-.about .aboutSection p:first-of-type {
   padding-bottom: 20px;
 }
 
@@ -432,6 +422,14 @@ header .fa-mouse {
 .skills .icons li i:hover path, .skills .icons li i:active path, .skills .icons li i:focus path, .skills .icons li .iconify:hover path, .skills .icons li .iconify:active path, .skills .icons li .iconify:focus path {
   -webkit-transform: translateY(-1px) scale(1.1);
           transform: translateY(-1px) scale(1.1);
+}
+
+.skills .icons li i {
+  font-size: 6rem;
+}
+
+.skills .icons li .iconify {
+  font-size: 7rem;
 }
 
 .skills .icons li .fa-terminal {
@@ -515,7 +513,6 @@ header .fa-mouse {
 
 .blog .post a {
   font-size: 2.5rem;
-  color: #fafafa;
   border-bottom: 1px solid white;
   padding-bottom: 5px;
   margin-bottom: 20px;
@@ -581,7 +578,6 @@ header .fa-mouse {
 }
 
 .social form + div a {
-  color: #fafafa;
   margin-right: 20px;
 }
 

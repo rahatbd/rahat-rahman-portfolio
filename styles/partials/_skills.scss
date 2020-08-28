@@ -14,7 +14,6 @@
             justify-content: center;
             align-items: center;
 
-            //check general styles
             i, .iconify {
                 padding-bottom: 10px;
 
@@ -26,6 +25,14 @@
                         transform: translateY(-1px) scale(1.1);
                     }
                 }
+            }
+
+            i {
+                font-size: 6rem;
+            }
+
+            .iconify {
+                font-size: 7rem;
             }
 
             .fa-terminal {

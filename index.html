@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c3eced3f24.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="assets/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="assets/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="assets/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="assets/favicons/site.webmanifest" rel="manifest">
     <link href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
@@ -16,20 +20,18 @@
         <div class="wrapper head">
             <nav>
                 <ul>
-                    <!-- add id's -->
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="heading">
                 <h1 class="name"></h1>
                 <p>I am <span class="typed"></span></p>
             </div>
-            <!-- check accesibility -->
-            <i class="fas fa-mouse" id="mouse"></i>
+            <i class="fas fa-mouse" id="mouse" aria-hidden="true"></i>
         </div>
     </header>
 
@@ -40,19 +42,15 @@
                 <div class="aboutSection">
                     <div><img src="assets/images/profile.jpg" alt="a sketch of Rahat Rahman's profile"></div>
                     <div>
-                        <p>I'm a front-end web developer located in Toronto, ON. I am passionate about web as a platform since it is open, free and
-                        democratic and which provides the maximum reach of users. I love to create web applications that are user interactive,
-                        accessible and responsive while making my code clean and DRY. I am well versed in Agile and Waterfall software
-                        development methodologies and have extensive experience working in Scrum teams. I am also proficient in testing web and
-                        mobile applications ensuring all business requirements have been met.</p>
-                        <p>I'm very eager to make use of all my old and newly acquired skills and be part of an exciting team where I can reach my
-                        full potential to learn and grow as a developer. If you think I have what you are looking for, let's get in touch!</p>
+                        <p>I'm a front-end web developer located in Toronto, ON. I am passionate about web as a platform since it is open, free and democratic and which provides the maximum reach of users. I love to create web applications that are user interactive, accessible and responsive while making my code clean and DRY.</p>
+                        <p>I am well versed in Agile and Waterfall software development methodologies and have extensive experience working in Scrum teams. I am also proficient in testing web and mobile applications ensuring all business requirements have been met.</p>
+                        <p>I'm very eager to make use of all my old and newly acquired skills and be part of an exciting team where I can reach my full potential to learn and grow as a developer. If you think I have what you are looking for, let's get in touch!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
                 <ul class="icons">
@@ -131,7 +129,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="wrapper">
                 <h2>Projects</h2>
                 <div class="project projectOne">
@@ -176,7 +174,7 @@
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="wrapper">
                 <h2>Blog</h2>
                 <div class="post">
@@ -186,23 +184,23 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper">
                 <h2>Contact</h2>
                 <div class="social">
                     <form action="https://formspree.io/maypgnpq" method="POST">
-                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="text" name="name" id="name" placeholder="Name*" maxlength="50" required>
                         <label for="name" class="sr-only">name</label>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email*" maxlength="50" required>
                         <label for="email" class="sr-only">email</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message*" maxlength="350" required></textarea>
                         <button type="submit">send</button>
                     </form>
                     <div>
                         <p>Thank you for visiting my portfolio. If you would like to connect, you can contact me through my form on the left.</p>
                         <p>Or you can find me on social media!</p>
-                        <a href="https://medium.com/@rahat.me/my-journey-with-juno-d4a778dce6ff" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium-m"></i></a>
-                        <a href="https://github.com/rahatbd?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a>
+                        <a href="https://medium.com/@rahat.me/my-journey-with-juno-d4a778dce6ff" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's blog on medium"><i class="fab fa-medium-m" aria-hidden="true"></i></a>
+                        <a href="https://github.com/rahatbd?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's repo on github"><i class="fab fa-github-alt" aria-hidden="true"></i></a>
                         <!-- <a href=""><i class="fab fa-medium"></i></a> -->
                     </div>
                 </div>
