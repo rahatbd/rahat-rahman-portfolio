@@ -5,8 +5,10 @@ header {
     min-height: 100vh;
 
     ul {
+        // border: 1px solid brown;
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
         padding-top: 50px;
 
         li {

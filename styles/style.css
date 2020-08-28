@@ -301,6 +301,8 @@ header ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 50px;
 }
 
@@ -363,34 +365,31 @@ header .fa-mouse {
 }
 
 .about .aboutSection {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about .aboutSection p {
   line-height: 1.6;
   text-align: justify;
   padding-bottom: 20px;
+  margin-left: 40px;
 }
 
 .skills .icons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (120px)[7];
-      grid-template-columns: repeat(7, 120px);
-  -ms-grid-rows: (120px)[2];
-      grid-template-rows: repeat(2, 120px);
+  -ms-grid-columns: (120px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 120px);
+  -ms-grid-rows: (120px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 120px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-column-gap: 60px;
-          column-gap: 60px;
-  row-gap: 40px;
+  gap: 40px 60px;
 }
 
 .skills .icons li {
@@ -457,7 +456,7 @@ header .fa-mouse {
 
 .projects .project .description {
   border-left: 1px solid white;
-  padding: 20px 0 0 20px;
+  padding: 20px 0 50px 20px;
 }
 
 .projects .project .description h3 {
@@ -481,6 +480,7 @@ header .fa-mouse {
   color: #212121;
   padding: 5px 10px;
   margin-right: 10px;
+  text-align: center;
 }
 
 .projects .project .description a:hover, .projects .project .description a:active, .projects .project .description a:focus {
@@ -495,7 +495,7 @@ header .fa-mouse {
 .blog .post {
   border: 1px solid white;
   height: 200px;
-  width: 30%;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,4 +587,95 @@ header .fa-mouse {
 
 .social form + div a i {
   font-size: 5rem;
+}
+
+@media (max-width: 1160px) {
+  .about .aboutSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutSection .profile {
+    width: 60%;
+    margin: 0 auto 20px;
+  }
+  .social form {
+    width: 120%;
+  }
+}
+
+@media (max-width: 775px) {
+  .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .social form {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .social form + div {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .projects .project {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .projects .project .description {
+    border-left: none;
+    border-top: 1px solid white;
+    padding-left: 0;
+  }
+  .projects .project .description p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 625px) {
+  header ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header ul li {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 535px) {
+  header ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .blog .post {
+    width: 300px;
+  }
+  .blog .post a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .projects .project .description a {
+    display: block;
+    width: 60%;
+    margin: 0 0 30px;
+  }
+  .projects .project .description a:last-child {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 340px) {
+  .heading h1 {
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
 }

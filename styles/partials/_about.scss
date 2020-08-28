@@ -1,8 +1,9 @@
 .about {
     .aboutSection {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 40px;
+        // display: grid;
+        // grid-template-columns: 1fr 2fr;
+        // gap: 40px;
+        display: flex;
 
         // div {
         //     border: 1px solid crimson;
@@ -12,6 +13,8 @@
             line-height: 1.6;
             text-align: justify;
             padding-bottom: 20px;
+
+            margin-left: 40px;
         }
     }
 }

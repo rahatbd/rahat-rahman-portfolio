@@ -5,13 +5,24 @@
         gap: 20px;
         border-bottom: 1px solid white;
 
+        // div {
+        //     border: 1px solid brown;
+        // }
+
+        // .screenshot {
+        //     //REMOVE CLASS FROM HTML
+        //     width: 500px;
+        // }
+
         img {
+
             padding: 20px 0;
         }
         
         .description {
             border-left: 1px solid white;
-            padding: 20px 0 0 20px;
+            // padding: 20px 0 0 20px;
+            padding: 20px 0 50px 20px;
 
             h3 {
                 text-transform: uppercase;
@@ -36,6 +47,8 @@
                 // color: white;
                 padding: 5px 10px;
                 margin-right: 10px;
+
+                text-align: center;
 
                 &:hover, &:active, &:focus {
                     background-color: $backgroundColour;
