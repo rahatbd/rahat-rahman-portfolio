@@ -193,6 +193,7 @@ body, h1, h2, h3, p, ul {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -577,6 +578,10 @@ header .fa-mouse {
   padding-bottom: 20px;
 }
 
+.social form + div .top {
+  display: none;
+}
+
 .social form + div a {
   margin-right: 20px;
 }
@@ -587,6 +592,10 @@ header .fa-mouse {
 
 .social form + div a i {
   font-size: 5rem;
+}
+
+.social form + div a path:hover {
+  fill: #f26b38;
 }
 
 @media (max-width: 1160px) {
@@ -632,6 +641,12 @@ header .fa-mouse {
   }
   .social form + div {
     padding-left: 0;
+  }
+  .social form + div .left {
+    display: none;
+  }
+  .social form + div .top {
+    display: unset;
   }
 }
 

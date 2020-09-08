@@ -47,6 +47,14 @@
 
         form + div {
             padding-left: 0;
+
+            .left {
+                display: none;
+            }
+
+            .top {
+                display: unset;
+            }
         }
     }
 }

@@ -50,15 +50,24 @@
             padding-bottom: 20px;
         }
 
+        .top {
+            display: none;
+        }
+
         a {
             margin-right: 20px;
              
             &:hover, &:active, &:focus {
                 color: $iconHoverColour;
             }
-                
+
             i {
                 font-size: 5rem;
+            }
+
+            //review
+            path:hover {
+                fill: #f26b38;
             }
         }
     }
