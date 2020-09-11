@@ -26,14 +26,6 @@ portfolioApp.typedText = () => {
     const typed = new Typed('.typed', options);
 }
 
-portfolioApp.mouseClick = () => {
-    $('#mouse').on('click', function() {
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top
-        }, 1000);
-    })
-}
-
 portfolioApp.init = () => {
     portfolioApp.scrambleText();
     portfolioApp.typedText();

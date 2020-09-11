@@ -1,15 +1,11 @@
 .skills {
     .icons {
         display: grid;
-        // grid-template-columns: repeat(7, 120px);
-        // grid-template-rows: repeat(2, 120px);
         grid-template-columns: repeat(auto-fill, 120px);
         grid-template-rows: repeat(auto-fill, 120px);
         justify-content: space-between;
         align-content: center;
         gap: 40px 60px;
-        // column-gap: 60px;
-        // row-gap: 40px;
 
         li {
             display: flex;
@@ -21,7 +17,7 @@
                 padding-bottom: 10px;
 
                 &:hover, &:active, &:focus {
-                    color: $iconHoverColour;
+                    // color: $iconHoverColour;
                     transform: scale(1.1);
 
                     path {

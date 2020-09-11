@@ -17,7 +17,6 @@ body {
 
 img {
     max-width: 100%;
-    // height: auto;
 }
 
 .wrapper {
@@ -28,7 +27,7 @@ img {
 }
 
 h2 {
-    // text-align: center;
+    text-transform: uppercase;
     padding-bottom: 20px;
     @include blink;
 }
@@ -43,7 +42,7 @@ a {
 }
 
 header, section {
-    border-bottom: 1px solid white;
+    border-bottom: 5px solid $primaryTextColour;
 }
 
 section {

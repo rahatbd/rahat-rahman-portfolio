@@ -197,7 +197,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", sans-serif;
   color: #fafafa;
   background-color: #212121;
   font-size: 2rem;
@@ -214,6 +214,7 @@ img {
 }
 
 h2 {
+  text-transform: uppercase;
   padding-bottom: 20px;
 }
 
@@ -234,7 +235,7 @@ a {
 }
 
 header, section {
-  border-bottom: 1px solid white;
+  border-bottom: 5px solid #fafafa;
 }
 
 section {
@@ -304,6 +305,7 @@ header ul {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-transform: uppercase;
   padding-top: 50px;
 }
 
@@ -356,7 +358,7 @@ header .heading h1::after {
 
 header .fa-mouse {
   font-size: 4rem;
-  color: #f26b38;
+  color: #fafafa;
   display: block;
   text-align: center;
   margin-top: 600px;
@@ -375,7 +377,6 @@ header .fa-mouse {
   line-height: 1.6;
   text-align: justify;
   padding-bottom: 20px;
-  margin-left: 40px;
 }
 
 .skills .icons {
@@ -414,7 +415,6 @@ header .fa-mouse {
 }
 
 .skills .icons li i:hover, .skills .icons li i:active, .skills .icons li i:focus, .skills .icons li .iconify:hover, .skills .icons li .iconify:active, .skills .icons li .iconify:focus {
-  color: #f26b38;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
