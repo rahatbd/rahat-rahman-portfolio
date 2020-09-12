@@ -2,19 +2,19 @@
     display: flex;
 
     form {
-        // border: 1px solid wheat;
+        // border: 1px solid brown;
         display: flex;
         flex-direction: column;
         width: 100%;
     
         input, textarea, button {
-            border: 1px solid white;
-            background: transparent;
+            border: 1px solid $primaryTextColour;
+            background-color: transparent;
             color: $primaryTextColour;
             margin-bottom: 20px;
     
             &:focus {
-                outline: 2px solid white;
+                outline: 2px solid $primaryTextColour;
             }
         }
         
@@ -47,6 +47,8 @@
         padding-left: 50px;
 
         p {
+            line-height: 1.3;
+            letter-spacing: 1px;
             padding-bottom: 20px;
         }
 
@@ -55,20 +57,28 @@
         }
 
         a {
-            margin-right: 20px;
-             
-            &:hover, &:active, &:focus {
-                color: $iconHoverColour;
-            }
+            margin-right: 15px;
+
+            // &:hover, &:active, &:focus {
+            //     // color: $iconHoverColour;
+            // }
 
             i {
-                font-size: 5rem;
+                font-size: 4.5rem;
+
+                &:hover, &:active, &:focus {
+                    transform: scale(1.1);
+                }
             }
 
-            //review
-            path:hover {
-                fill: #f26b38;
-            }
+            // path:hover {
+            //     // fill: blue;
+            //     // transform-origin: 50% 50%;
+            //     // transform: translateX(0px) scale(1.5);
+            //     // height: 45px;
+            //     // width: 45px;
+            //     background-color: red;
+            // }
         }
     }
 }

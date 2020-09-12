@@ -1,17 +1,16 @@
 .blog {
     .post {
-        border: 1px solid white;
-        height: 200px;
-        // width: 40%;
-        width: 400px;
+        border: 1px solid $primaryTextColour;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 200px;
+        width: 400px;
 
         a {
             font-size: 2.5rem;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid $primaryTextColour;
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
