@@ -357,12 +357,18 @@ header .heading h1::after {
           animation: blink 1s ease infinite;
 }
 
+header .heading h1 + p {
+  height: 0;
+}
+
 header .fa-mouse {
   font-size: 4rem;
   color: #fafafa;
   display: block;
   text-align: center;
-  margin-top: 600px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
   -webkit-animation: bounce 2s ease infinite;
           animation: bounce 2s ease infinite;
   cursor: pointer;
@@ -462,7 +468,7 @@ header .fa-mouse {
 
 .projects .project .description {
   border-left: 1px solid #fafafa;
-  padding: 20px 0 50px 20px;
+  padding: 20px 0 40px 20px;
 }
 
 .projects .project .description h3 {
@@ -472,12 +478,13 @@ header .fa-mouse {
 
 .projects .project .description p {
   text-align: justify;
+  line-height: 1.4;
   padding-bottom: 20px;
 }
 
 .projects .project .description p:nth-of-type(2) {
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   padding-bottom: 30px;
 }
 
@@ -485,6 +492,7 @@ header .fa-mouse {
   border: 1px solid #fafafa;
   background-color: transparent;
   color: #fafafa;
+  text-align: center;
   padding: 5px 10px;
   margin-right: 10px;
 }
@@ -602,25 +610,6 @@ header .fa-mouse {
           transform: scale(1.1);
 }
 
-@media (max-width: 1160px) {
-  .about .aboutSection {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about .aboutSection .profile {
-    width: 60%;
-    margin: 0 auto 20px;
-  }
-  .about .aboutSection p {
-    margin-left: 0;
-  }
-  .social form {
-    width: 120%;
-  }
-}
-
 @media (max-width: 775px) {
   header ul {
     -webkit-box-pack: center;
@@ -655,31 +644,37 @@ header .fa-mouse {
 }
 
 @media (max-width: 740px) {
+  .projects {
+    padding-bottom: 0;
+  }
   .projects .project {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
   .projects .project .description {
     border-left: none;
-    border-top: 1px solid white;
+    border-top: 1px solid #fafafa;
     padding-left: 0;
-  }
-  .projects .project .description p {
-    text-align: left;
   }
 }
 
 @media (max-width: 625px) {
   header ul li {
     margin-right: 30px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 535px) {
-  header ul li {
-    margin-bottom: 10px;
-  }
   .skills .icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social form + div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -690,9 +685,13 @@ header .fa-mouse {
   }
 }
 
-@media (max-width: 440px) {
-  .heading h1 {
-    line-height: 1.15;
+@media (max-width: 450px) {
+  .projects .project .description a {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .projects .project .description a:nth-of-type(1), .projects .project .description a:nth-of-type(2) {
     margin-bottom: 10px;
   }
   .about .aboutSection p {
@@ -701,21 +700,11 @@ header .fa-mouse {
   .blog .post {
     max-width: 290px;
   }
-  .blog .post a {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 350px) {
-  .skills p {
-    font-size: 1.6rem;
-  }
-  .projects .project .description a {
-    display: block;
-    width: 60%;
-    margin: 0 0 30px;
-  }
-  .projects .project .description a:last-child {
-    margin: 0 0 0 auto;
+  .heading h1 {
+    line-height: 1.15;
+    margin-bottom: 10px;
   }
 }

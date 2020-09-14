@@ -1,24 +1,24 @@
-@media (max-width: 1160px) {
-    .about {
-        .aboutSection {
-            flex-direction: column;
+// @media (max-width: 1160px) {
+    // .about {
+    //     .aboutSection {
+    //         flex-direction: column;
 
-            .profile {
-                width: 60%;
-                margin: 0 auto 20px;
-            }
+    //         .profile {
+    //             width: 60%;
+    //             margin: 0 auto 20px;
+    //         }
 
-            p {
-                margin-left: 0;
-            }
-        }
-    }
-    .social {
-        form {
-            width: 120%;
-        }
-    }
-}
+    //         p {
+    //             margin-left: 0;
+    //         }
+    //     }
+    // }
+    // .social {
+    //     form {
+    //         width: 120%;
+    //     }
+    // }
+// }
 
 @media (max-width: 775px) {
     header {
@@ -61,18 +61,15 @@
 
 @media (max-width: 740px) {
     .projects {
+        padding-bottom: 0;
+
         .project {
             grid-template-columns: 100%;
 
             .description {
                 border-left: none;
-                border-top: 1px solid white;
+                border-top: 1px solid $primaryTextColour;
                 padding-left: 0;
-                // padding-bottom: 40px;
-
-                p {
-                    text-align: left;
-                }
             }
         }
     }
@@ -83,23 +80,25 @@
         ul {
             li {
                 margin-right: 30px;
+                margin-bottom: 10px;
             }
         }
     }
 }
 
 @media (max-width: 535px) {
-    header {
-        ul {
-            li {
-                margin-bottom: 10px;
-            }
-        }
-    }
-
     .skills {
         .icons {
             justify-content: center;
+        }
+    }
+
+    .social {
+        form + div {
+            div {
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 
@@ -111,11 +110,20 @@
     }
 }
 
-@media (max-width: 440px) {
-    .heading {
-        h1 {
-            line-height: 1.15;
-            margin-bottom: 10px;
+@media (max-width: 450px) {
+    .projects {
+        .project {
+            .description {
+                a {
+                    display: block;
+                    width: 60%;
+                    margin: 0 auto;
+
+                    &:nth-of-type(1), &:nth-of-type(2) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
         }
     }
 
@@ -130,45 +138,15 @@
     .blog {
         .post {
             max-width: 290px;
-
-            a {
-                font-size: 2rem;
-            }
         }
     }
 }
 
-//change to 360px???
 @media (max-width: 350px) {
-    .skills {
-        p {
-            font-size: 1.6rem;
-        }
-    }
-
-    .projects {
-        .project {
-            .description {
-                a {
-                    display: block;
-                    width: 60%;
-                    margin: 0 0 30px;
-
-                    &:last-child {
-                        margin: 0 0 0 auto;
-                    }
-                }
-            }
+    .heading {
+        h1 {
+            line-height: 1.15;
+            margin-bottom: 10px;
         }
     }
 }
-
-//merge this
-// @media (max-width: 340px) {
-//     .heading {
-//         h1 {
-//             line-height: 1.15;
-//             margin-bottom: 10px;
-//         }
-//     }
-// }

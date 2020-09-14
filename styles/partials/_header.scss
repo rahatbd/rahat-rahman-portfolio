@@ -43,6 +43,10 @@ header {
             position: relative;
             @include blink;
         }
+
+        h1 + p {
+            height: 0;
+        }
     }
 
     .fa-mouse {
@@ -50,7 +54,9 @@ header {
         color: $primaryTextColour;
         display: block;
         text-align: center;
-        margin-top: 600px;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
         animation: bounce 2s ease infinite;
         cursor: pointer;
     }

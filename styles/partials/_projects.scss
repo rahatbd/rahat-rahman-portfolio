@@ -15,20 +15,21 @@
         
         .description {
             border-left: 1px solid $primaryTextColour;
-            padding: 20px 0 50px 20px;
+            padding: 20px 0 40px 20px;
 
             h3 {
                 text-transform: uppercase;
                 padding-bottom: 15px;
             }
 
-            p {
+            p { 
                 text-align: justify;
+                line-height: 1.4;
                 padding-bottom: 20px;
 
                 &:nth-of-type(2) {
                     text-transform: uppercase;
-                    letter-spacing: 3px;
+                    letter-spacing: 2px;
                     padding-bottom: 30px;
                 }
             }
@@ -37,7 +38,7 @@
                 border: 1px solid $primaryTextColour;
                 background-color: transparent;
                 color: $primaryTextColour;
-                // text-align: center;
+                text-align: center;
                 padding: 5px 10px;
                 margin-right: 10px;
 

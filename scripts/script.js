@@ -29,7 +29,6 @@ portfolioApp.typedText = () => {
 portfolioApp.init = () => {
     portfolioApp.scrambleText();
     portfolioApp.typedText();
-    portfolioApp.mouseClick();
 }
 
 $(document).ready(function() {
