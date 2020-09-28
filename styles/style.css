@@ -380,9 +380,17 @@ header .fa-mouse {
   display: flex;
 }
 
+.about .aboutSection .profile {
+  width: 80%;
+}
+
+.about .aboutSection .profile img {
+  border-radius: 5px;
+}
+
 .about .aboutSection p {
   line-height: 1.6;
-  text-align: justify;
+  margin-left: 50px;
   padding-bottom: 20px;
 }
 
@@ -463,7 +471,7 @@ header .fa-mouse {
 }
 
 .projects .project img {
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 .projects .project .description {
@@ -477,8 +485,7 @@ header .fa-mouse {
 }
 
 .projects .project .description p {
-  text-align: justify;
-  line-height: 1.4;
+  line-height: 1.5;
   padding-bottom: 20px;
 }
 
@@ -571,8 +578,8 @@ header .fa-mouse {
 
 .social form button {
   text-transform: uppercase;
-  padding: 5px 25px;
   margin: 0 auto 0 0;
+  padding: 5px 25px;
   cursor: pointer;
 }
 
@@ -583,7 +590,6 @@ header .fa-mouse {
 }
 
 .social form + div {
-  text-align: justify;
   padding-left: 50px;
 }
 
@@ -610,6 +616,11 @@ header .fa-mouse {
           transform: scale(1.1);
 }
 
+.social form + div a svg:hover, .social form + div a svg:active, .social form + div a svg:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 @media (max-width: 775px) {
   header ul {
     -webkit-box-pack: center;
@@ -618,6 +629,31 @@ header .fa-mouse {
   }
   h2 {
     text-align: center;
+  }
+  .about .aboutSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutSection .profile {
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+  .about .aboutSection p {
+    margin: 0 10px;
+  }
+  .projects {
+    padding-bottom: 0;
+  }
+  .projects .project {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .projects .project .description {
+    border-left: none;
+    border-top: 1px solid #fafafa;
+    padding-left: 0;
   }
   .blog .post {
     margin: 0 auto;
@@ -640,21 +676,6 @@ header .fa-mouse {
   }
   .social form + div .top {
     display: unset;
-  }
-}
-
-@media (max-width: 740px) {
-  .projects {
-    padding-bottom: 0;
-  }
-  .projects .project {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-  .projects .project .description {
-    border-left: none;
-    border-top: 1px solid #fafafa;
-    padding-left: 0;
   }
 }
 

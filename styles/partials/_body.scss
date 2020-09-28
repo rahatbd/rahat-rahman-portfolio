@@ -61,12 +61,12 @@ footer {
 }
 
 @keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $primaryTextColour;
-  }
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: $primaryTextColour;
+    }
 }
 
 @keyframes bounce {

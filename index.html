@@ -18,7 +18,7 @@
     <link href="assets/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
     <link href="assets/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
     <link href="assets/favicons/site.webmanifest" rel="manifest">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css" rel="stylesheet">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
@@ -43,17 +43,16 @@
                 <p class="sr-only">I am a front-end web developer.</p>
                 <p class="sr-only">I am based in Toronto.</p>
             </div>
-            <!-- <a href="#about"><i class="fas fa-mouse" aria-hidden="true"></i></a> -->
         </div>
-        <div><a href="#about"><i class="fas fa-mouse" aria-hidden="true"></i></a></div>
+        <div><a href="#about" tabindex="-1"><i class="fas fa-mouse" aria-hidden="true"></i></a></div>
     </header>
 
     <main>
-        <section class="about" id="about">
+        <section class="about" id="about" tabindex="0">
             <div class="wrapper">
                 <h2>About</h2>
                 <div class="aboutSection">
-                    <!-- <div class="profile"><img src="assets/images/profile.jpg" alt="a sketch of Rahat Rahman's profile"></div> -->
+                    <div class="profile"><img src="https://rahatrahman.com/photos/profile.jpeg" alt="Rahat Rahman's profile picture"></div>
                     <div>
                         <p>I'm a front-end web developer located in Toronto, ON. I am passionate about web as a platform since it is open, free and democratic and which provides the maximum reach of users. I love to create web applications that are user interactive, accessible and responsive while making my code clean and DRY.</p>
                         <p>I am well versed in Agile and Waterfall software development methodologies and have extensive experience working in Scrum teams. I am also proficient in testing web and mobile applications ensuring all business requirements have been met.</p>
@@ -63,7 +62,7 @@
             </div>
         </section>
 
-        <section class="skills" id="skills">
+        <section class="skills" id="skills" tabindex="0">
             <div class="wrapper">
                 <h2>Skills</h2>
                 <ul class="icons">
@@ -141,7 +140,7 @@
             </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="projects" id="projects" tabindex="0">
             <div class="wrapper">
                 <h2>Projects</h2>
                 <div class="project projectOne">
@@ -182,12 +181,13 @@
                         <p>A multi-page client PSD conversion project that is fully responsive across all devices and made pixel-perfect using a style guide and design specification.</p>
                         <p>HTML5 | CSS3 | Sass | Responsive</p>
                         <a href="https://github.com/rahatbd/-rahat-rahman-project-two" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        <a href="https://rahatrahman.com/project-2/">Live Link</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="blog" id="blog">
+        <section class="blog" id="blog" tabindex="0">
             <div class="wrapper">
                 <h2>Blog</h2>
                 <div class="post">
@@ -197,7 +197,7 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" tabindex="0">
             <div class="wrapper">
                 <h2>Contact</h2>
                 <div class="social">
@@ -213,12 +213,13 @@
                         <p>Thank you for visiting my portfolio. If you would like to connect, you can contact me through my form on the <span class="left">left</span><span class="top">top</span>.</p>
                         <p>You can also find me on social media or book a meeting through Calendly below.</p>
                         <div>
-                            <a href="https://medium.com/@rahat.me" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's blog on medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/rahat-rahman" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's profile on linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                            <a href="https://github.com/rahatbd" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's repo on github"><i class="fab fa-github-square" aria-hidden="true"></i></a>
-                            <!-- aria-label="go to Rahat Rahman's calendly to book a 30 minute meeting" -->
+                            <a href="https://medium.com/@rahat.me" title="Medium" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's blog on medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/rahat-rahman" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's profile on linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://github.com/rahatbd" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="go to Rahat Rahman's repo on github"><i class="fab fa-github-square" aria-hidden="true"></i></a>
                             <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/rahatrahman/30min'});return false;">
-                                <svg height="40" width="40" viewBox="7.4 0 344.6 360" xmlns="http://www.w3.org/2000/svg">
+                                <svg height="40" width="40" viewBox="7.4 0 344.6 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="calendlyTitle calendlyDesc">
+                                    <title id="calendlyTitle">Calendly</title>
+                                    <desc id="calendlyDesc">calendly icon to book a 30 minute meeting with Rahat Rahman</desc>
                                     <g fill="#fafafa">
                                         <path d="m313.8 360h-268.3c-21 0-38.1-17.1-38.1-38.1v-268.4c0-21 17.1-38.1 38.1-38.1h268.3c21 0 38.1 17.1 38.1 38.1v268.3c.1 21.1-17 38.2-38.1 38.2zm-268.3-323.5c-9.4 0-17 7.6-17 17v268.3c0 9.4 7.6 17 17 17h268.3c9.4 0 17-7.6 17-17v-268.3c0-9.4-7.6-17-17-17z"/>
                                         <path d="m256.6 72.4c-4.5 0-8.1-3.6-8.1-8.1v-56.2c0-4.5 3.6-8.1 8.1-8.1s8.1 3.6 8.1 8.1v56.1c0 4.5-3.6 8.2-8.1 8.2zm-154.7 0c-4.5 0-8.1-3.6-8.1-8.1v-56.2c0-4.5 3.6-8.1 8.1-8.1s8.1 3.6 8.1 8.1v56.1c.1 4.5-3.6 8.2-8.1 8.2zm87.5 181.4c-33.6 0-60.9-27.3-60.9-60.9s27.3-60.9 60.9-60.9c15.2 0 29.7 5.6 40.9 15.8 1.4 1.2 1.5 3.4.2 4.7-1.2 1.4-3.4 1.5-4.7.2-10-9.1-22.9-14.1-36.4-14.1-29.9 0-54.2 24.3-54.2 54.2s24.3 54.2 54.2 54.2c13.5 0 26.4-5 36.4-14.1 1.4-1.2 3.5-1.1 4.7.2 1.2 1.4 1.1 3.5-.2 4.7-11.2 10.4-25.7 16-40.9 16z"/>
@@ -232,7 +233,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer tabindex="0">
         <div class="wrapper">
             <p>Made with 🤍 in Toronto. <span>&#169; Rahat Rahman 2020.</span></p>
         </div>

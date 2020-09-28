@@ -1,14 +1,10 @@
 //== VARIABLES ==//
 $primaryFontFamily: 'Roboto', sans-serif;
-// $secondaryFontFamily: 'Roboto Mono', monospace;
 $backgroundColour: #212121;
 $primaryTextColour: #fafafa;
 $inactiveTextColour: #ababab;
 
-// $backgroundColour: #030200;
-// $iconHoverColour: #f26b38;
-
-//== MIXINS ==//
+//== MIXIN ==//
 @mixin blink {
     &::after {
         content: "_";

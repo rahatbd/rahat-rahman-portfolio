@@ -1,25 +1,3 @@
-// @media (max-width: 1160px) {
-    // .about {
-    //     .aboutSection {
-    //         flex-direction: column;
-
-    //         .profile {
-    //             width: 60%;
-    //             margin: 0 auto 20px;
-    //         }
-
-    //         p {
-    //             margin-left: 0;
-    //         }
-    //     }
-    // }
-    // .social {
-    //     form {
-    //         width: 120%;
-    //     }
-    // }
-// }
-
 @media (max-width: 775px) {
     header {
         ul {
@@ -29,6 +7,35 @@
 
     h2 {
         text-align: center;
+    }
+
+    .about {
+        .aboutSection {
+            flex-direction: column;
+
+            .profile {
+                width: 50%;
+                margin: 0 auto 20px;
+            }
+
+            p {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .projects {
+        padding-bottom: 0;
+
+        .project {
+            grid-template-columns: 100%;
+
+            .description {
+                border-left: none;
+                border-top: 1px solid $primaryTextColour;
+                padding-left: 0;
+            }
+        }
     }
 
     .blog {
@@ -54,22 +61,6 @@
 
             .top {
                 display: unset;
-            }
-        }
-    }
-}
-
-@media (max-width: 740px) {
-    .projects {
-        padding-bottom: 0;
-
-        .project {
-            grid-template-columns: 100%;
-
-            .description {
-                border-left: none;
-                border-top: 1px solid $primaryTextColour;
-                padding-left: 0;
             }
         }
     }
