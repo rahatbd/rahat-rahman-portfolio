@@ -471,7 +471,7 @@ header .fa-mouse {
 }
 
 .projects .project img {
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .projects .project .description {
@@ -649,6 +649,9 @@ header .fa-mouse {
   .projects .project {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+  }
+  .projects .project img {
+    padding-bottom: 0;
   }
   .projects .project .description {
     border-left: none;

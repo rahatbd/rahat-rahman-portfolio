@@ -30,6 +30,10 @@
         .project {
             grid-template-columns: 100%;
 
+            img {
+                padding-bottom: 0;
+            }
+
             .description {
                 border-left: none;
                 border-top: 1px solid $primaryTextColour;
