@@ -1,6 +1,10 @@
 header {
     min-height: 100vh;
 
+    .fa-bars {
+        display: none;
+    }
+
     ul {
         // border: 1px solid brown;
         display: flex;
@@ -21,10 +25,10 @@ header {
                     @include blink;
                 }
             }
-        }
 
-        li:last-child {
-            margin-right: 0;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 
