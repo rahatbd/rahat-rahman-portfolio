@@ -42,6 +42,10 @@ portfolioApp.menuBar = () => {
             $('nav ul').toggleClass('menu');
             $('#background').toggleClass('background');
         }
+        $('ul').on('click', () => {
+            $('nav ul').removeClass('menu');
+            $('#background').removeClass('background');
+        })
     })
 }
 
