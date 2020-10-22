@@ -297,10 +297,6 @@ header {
   min-height: 100vh;
 }
 
-header .fa-bars {
-  display: none;
-}
-
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
