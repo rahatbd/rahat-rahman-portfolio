@@ -72,17 +72,14 @@
 
 @media (max-width: 630px) {
     header {
-        .fa-bars {
-            display: inline-block;
-            color: $inactiveTextColour;
-            font-size: 3rem;
-            text-transform: uppercase;
-            padding-top: 20px;
-            cursor: pointer;
+        ul {
+            display: none;
+        }
 
-            &:hover, &:active, &:focus {
-                color: $primaryTextColour;
-            }
+        .hamburger {
+            position: relative;
+            left: 0;
+            z-index: 1;
         }
 
         .menu {
@@ -96,24 +93,29 @@
         }
 
         .background {
-            background-color: black;
+            background-color: $backgroundColourDark;
             position: absolute;
             top: 0;
             left: 0;
             height: 400px;
             width: 400px;
-            z-index: -1;
             border-radius: 50%;
-            transform: translate(-45%, -20%);
+            transform: translate(-45%, -15%);
         }
 
-        ul {
-            display: none;
+        .label {
+            font-size: 3.3rem;
+            text-transform: uppercase;
+            color: $inactiveTextColour;
         }
 
-        // .heading {
-        //     transform: translate(-50%, 0%);
-        // }
+        .label.active {
+            color: $primaryTextColour;
+        }
+
+        .heading {
+            z-index: -1;
+        }
     }
 }
 

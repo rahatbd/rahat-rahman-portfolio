@@ -24,35 +24,49 @@ portfolioApp.typedText = () => {
     const typed = new Typed('.typed', options);
 }
 
-portfolioApp.menuBar = () => {
-    const $menu = $('.fa-bars');
+portfolioApp.hamburgerMenu = () => {
+    const $hamburger = $('.hamburger');
+    const $label = $('.label');
+    const $menu = $('nav ul');
+    const $background = $('#background');
     $(document).mouseup(event => {
-        if (!$menu.is(event.target)) {
-            $('nav ul').removeClass('menu');
-            $('#background').removeClass('background');
+        if (!$hamburger.is(event.target) && $hamburger.has(event.target).length === 0 && !$background.is(event.target)) {
+            removeClass();
         }
     })
-    $menu.on('click', () => {
-        $('nav ul').toggleClass('menu');
-        $('#background').toggleClass('background');
+    $hamburger.on('click', () => {
+        toggleClass();
     })
-    $menu.keypress(event => {
+    $hamburger.keypress(event => {
         if (event.keyCode === 13) {
             event.preventDefault();
-            $('nav ul').toggleClass('menu');
-            $('#background').toggleClass('background');
+            toggleClass();
         }
-        $('ul').on('click', () => {
-            $('nav ul').removeClass('menu');
-            $('#background').removeClass('background');
+        $menu.on('click', () => {
+            removeClass();
         })
     })
+    $(window).scroll(() => {
+        removeClass();
+    })
+    const removeClass = () => {
+        $hamburger.removeClass('is-active');
+        $label.removeClass('active');
+        $menu.removeClass('menu');
+        $background.removeClass('background', 250, 'easeOutExpo');
+    }
+    const toggleClass = () => {
+        $hamburger.toggleClass('is-active');
+        $label.toggleClass('active');
+        $menu.toggleClass('menu');
+        $background.toggleClass('background');
+    }
 }
 
 portfolioApp.init = () => {
     portfolioApp.scrambleText();
     portfolioApp.typedText();
-    portfolioApp.menuBar();
+    portfolioApp.hamburgerMenu();
 }
 
 $(document).ready(function() {

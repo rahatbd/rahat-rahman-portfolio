@@ -1,10 +1,13 @@
-//== VARIABLES ==//
+//----VARIABLES----//
 $primaryFontFamily: 'Roboto', sans-serif;
 $backgroundColour: #212121;
 $primaryTextColour: #fafafa;
 $inactiveTextColour: #ababab;
 
-//== MIXIN ==//
+//----FUNCTION----//
+$backgroundColourDark: darken($backgroundColour, 50);
+
+//----MIXIN----//
 @mixin blink {
     &::after {
         content: "_";
