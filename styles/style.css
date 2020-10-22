@@ -644,7 +644,7 @@ header .fa-mouse {
   text-transform: none;
   background-color: transparent;
   overflow: visible;
-  right: -100px;
+  left: -100px;
   border: 0;
   margin: 10px 0 0;
   padding: 15px 0;
