@@ -46,6 +46,11 @@ portfolioApp.hamburgerMenu = () => {
             removeClass();
         })
     })
+    $hamburger.keydown(event => {
+        if (event.keyCode === 27) {
+            removeClass();
+        }
+    })
     $(window).scroll(() => {
         removeClass();
     })

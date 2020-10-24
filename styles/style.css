@@ -629,8 +629,7 @@ header .fa-mouse {
 @link https://github.com/jonsuh/hamburgers
 *****************************************/
 .hamburger {
-  display: inline-block;
-  position: absolute;
+  display: none;
   -webkit-transition-property: opacity, -webkit-filter;
   transition-property: opacity, -webkit-filter;
   transition-property: opacity, filter;
@@ -644,7 +643,6 @@ header .fa-mouse {
   text-transform: none;
   background-color: transparent;
   overflow: visible;
-  left: -100px;
   border: 0;
   margin: 10px 0 0;
   padding: 15px 0;
@@ -821,6 +819,7 @@ header .fa-mouse {
     display: none;
   }
   header .hamburger {
+    display: unset;
     position: relative;
     left: 0;
     z-index: 1;
