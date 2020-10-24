@@ -507,6 +507,8 @@ header .fa-mouse {
 .projects .project .description a:hover, .projects .project .description a:active, .projects .project .description a:focus {
   background-color: #fafafa;
   color: #212121;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .projects .projectFour {
@@ -586,7 +588,8 @@ header .fa-mouse {
 .social form button:hover, .social form button:active, .social form button:focus {
   background-color: #fafafa;
   color: #212121;
-  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .social form + div {

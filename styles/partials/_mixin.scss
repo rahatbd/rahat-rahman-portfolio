@@ -7,11 +7,17 @@ $inactiveTextColour: #ababab;
 //----FUNCTION----//
 $backgroundColourDark: darken($backgroundColour, 50);
 
-//----MIXIN----//
+//----MIXINS----//
 @mixin blink {
     &::after {
         content: "_";
         position: absolute;
         animation: blink 1s ease infinite;
     }
+}
+
+@mixin hover {
+    background-color: $primaryTextColour;
+    color: $backgroundColour;
+    transition: all 0.3s;
 }

@@ -34,9 +34,7 @@
             cursor: pointer;
     
             &:hover, &:active, &:focus {
-                background-color: $primaryTextColour;
-                color: $backgroundColour;
-                font-weight: 700;
+                @include hover;
             }
         }
     }

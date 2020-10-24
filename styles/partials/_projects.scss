@@ -42,8 +42,7 @@
                 margin-right: 10px;
 
                 &:hover, &:active, &:focus {
-                    background-color: $primaryTextColour;
-                    color: $backgroundColour;
+                    @include hover;
                 }
             }
         }
