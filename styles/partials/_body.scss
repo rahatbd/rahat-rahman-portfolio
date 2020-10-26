@@ -9,10 +9,16 @@ html {
 }
 
 body {
+    font-size: 2rem;
     font-family: $primaryFontFamily;
     color: $primaryTextColour;
     background-color: $backgroundColour;
-    font-size: 2rem;
+    background-image: radial-gradient($primaryTextColour, $backgroundColour 2px, transparent 40px),
+                      radial-gradient($primaryTextColour, $backgroundColour 1px, transparent 30px),
+                      radial-gradient($primaryTextColour, $backgroundColour 2px, transparent 40px),
+                      radial-gradient($primaryTextColour, $backgroundColour 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 img {
@@ -42,15 +48,21 @@ a {
 }
 
 header, section {
-    border-bottom: 5px solid $primaryTextColour;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $primaryTextColour;
+        width: 90%;
+        height: 5px;
+        bottom: 0;
+        left: 5%;
+    }
 }
 
 section {
-    padding: 50px 0;
-}
-
-.typed-cursor {
-    display: none;
+    padding: 80px 0;
 }
 
 footer {

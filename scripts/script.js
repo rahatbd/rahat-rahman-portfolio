@@ -16,7 +16,7 @@ portfolioApp.scrambleText = () => {
 
 portfolioApp.typedText = () => {
     const options = {
-        strings: ['a front-end web developer.', 'based in Toronto.'],
+        strings: ['a front-end developer', 'based in Toronto'],
         typeSpeed: 60,
         backSpeed: 40,
         loop: true,

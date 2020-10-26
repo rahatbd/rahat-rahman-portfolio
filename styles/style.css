@@ -197,10 +197,13 @@ html {
 }
 
 body {
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
   color: #fafafa;
   background-color: #212121;
-  font-size: 2rem;
+  background-image: radial-gradient(#fafafa, #212121 2px, transparent 40px), radial-gradient(#fafafa, #212121 1px, transparent 30px), radial-gradient(#fafafa, #212121 2px, transparent 40px), radial-gradient(#fafafa, #212121 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 img {
@@ -235,15 +238,21 @@ a {
 }
 
 header, section {
-  border-bottom: 5px solid #fafafa;
+  position: relative;
+}
+
+header::after, section::after {
+  content: "";
+  position: absolute;
+  background-color: #fafafa;
+  width: 90%;
+  height: 5px;
+  bottom: 0;
+  left: 5%;
 }
 
 section {
-  padding: 50px 0;
-}
-
-.typed-cursor {
-  display: none;
+  padding: 80px 0;
 }
 
 footer {
@@ -304,10 +313,13 @@ header ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   text-transform: uppercase;
-  padding-top: 50px;
+  position: fixed;
+  width: 90%;
+  z-index: 1;
+  background-color: #212121;
+  border-bottom: 5px solid #fafafa;
+  padding: 20px 0;
 }
 
 header ul li {
@@ -364,14 +376,12 @@ header .heading h1 + p {
 header .fa-mouse {
   font-size: 4rem;
   color: #fafafa;
-  display: block;
   text-align: center;
   position: absolute;
   bottom: 50px;
-  width: 100%;
+  width: 90%;
   -webkit-animation: bounce 2s ease infinite;
           animation: bounce 2s ease infinite;
-  cursor: pointer;
 }
 
 .about .aboutSection {
@@ -757,13 +767,59 @@ header .fa-mouse {
 }
 
 @media (max-width: 775px) {
-  header ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   h2 {
     text-align: center;
+  }
+  section {
+    padding: 50px 0;
+  }
+  header ul {
+    display: none;
+  }
+  header .hamburger {
+    display: unset;
+    position: relative;
+    left: 0;
+    z-index: 1;
+    border-bottom: 5px solid #fafafa;
+  }
+  header .menu {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  header .menu li {
+    padding-top: 20px;
+  }
+  header .background {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    -webkit-transform: translate(-45%, -15%);
+            transform: translate(-45%, -15%);
+  }
+  header .label {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    color: #ababab;
+  }
+  header .label.active {
+    color: #fafafa;
+  }
+  header .heading {
+    z-index: -1;
   }
   .about .aboutSection {
     -webkit-box-orient: vertical;
@@ -814,53 +870,6 @@ header .fa-mouse {
   }
   .social form + div .top {
     display: unset;
-  }
-}
-
-@media (max-width: 630px) {
-  header ul {
-    display: none;
-  }
-  header .hamburger {
-    display: unset;
-    position: relative;
-    left: 0;
-    z-index: 1;
-  }
-  header .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 0;
-  }
-  header .menu li {
-    padding-top: 20px;
-  }
-  header .background {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    -webkit-transform: translate(-45%, -15%);
-            transform: translate(-45%, -15%);
-  }
-  header .label {
-    font-size: 3.3rem;
-    text-transform: uppercase;
-    color: #ababab;
-  }
-  header .label.active {
-    color: #fafafa;
-  }
-  header .heading {
-    z-index: -1;
   }
 }
 
