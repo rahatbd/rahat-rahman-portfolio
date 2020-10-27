@@ -201,7 +201,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #fafafa;
   background-color: #212121;
-  background-image: radial-gradient(#fafafa, #212121 2px, transparent 40px), radial-gradient(#fafafa, #212121 1px, transparent 30px), radial-gradient(#fafafa, #212121 2px, transparent 40px), radial-gradient(#fafafa, #212121 2px, transparent 30px);
+  background-image: radial-gradient(#fafafa, #212121 2px, rgba(255, 255, 255, 0) 2px), radial-gradient(#fafafa, #212121 1px, rgba(255, 255, 255, 0) 1px), radial-gradient(#fafafa, #212121 2px, rgba(255, 255, 255, 0) 2px), radial-gradient(#fafafa, #212121 2px, rgba(255, 255, 255, 0) 1px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
