@@ -316,7 +316,7 @@ header ul {
   text-transform: uppercase;
   position: fixed;
   width: 90%;
-  z-index: 1;
+  z-index: 2;
   background-color: #212121;
   border-bottom: 5px solid #fafafa;
   padding: 20px 0;
@@ -776,39 +776,44 @@ header .fa-mouse {
   header ul {
     display: none;
   }
-  header .hamburger {
-    display: unset;
-    position: relative;
-    left: 0;
-    z-index: 1;
+  header .hamburgerMenu {
+    position: fixed;
+    width: 90%;
+    z-index: 2;
+    background-color: #212121;
     border-bottom: 5px solid #fafafa;
   }
+  header .hamburger {
+    display: unset;
+  }
   header .menu {
-    position: static;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    top: 80px;
     background: none;
     border: none;
+    width: 0;
     padding: 0;
   }
   header .menu li {
     padding-top: 20px;
+    margin: 0;
   }
   header .background {
-    background-color: black;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 450px;
     width: 450px;
+    z-index: 1;
     border-radius: 50%;
-    -webkit-transform: translate(-45%, -15%);
-            transform: translate(-45%, -15%);
+    background-color: #212121;
+    border: 1px solid #fafafa;
+    -webkit-transform: translate(-50%, -15%);
+            transform: translate(-50%, -15%);
   }
   header .label {
     font-size: 3.3rem;
@@ -817,9 +822,6 @@ header .fa-mouse {
   }
   header .label.active {
     color: #fafafa;
-  }
-  header .heading {
-    z-index: -1;
   }
   .about .aboutSection {
     -webkit-box-orient: vertical;

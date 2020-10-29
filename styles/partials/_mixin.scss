@@ -4,9 +4,6 @@ $backgroundColour: #212121;
 $primaryTextColour: #fafafa;
 $inactiveTextColour: #ababab;
 
-//----FUNCTION----//
-$backgroundColourDark: darken($backgroundColour, 50);
-
 //----MIXINS----//
 @mixin blink {
     &::after {
