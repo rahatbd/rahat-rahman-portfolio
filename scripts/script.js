@@ -69,6 +69,7 @@ portfolioApp.hamburgerMenu = () => {
 }
 
 portfolioApp.init = () => {
+    AOS.init();
     portfolioApp.scrambleText();
     portfolioApp.typedText();
     portfolioApp.hamburgerMenu();
