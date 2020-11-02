@@ -1,6 +1,15 @@
 header {
     min-height: 100vh;
 
+    .cursor {
+        position: absolute;
+        left: -5%;
+        height: 2px;
+        width: 2px;
+        border-radius: 50%;
+        background-color: $primaryTextColour;
+    }
+
     ul {
         // border: 1px solid brown;
         display: flex;

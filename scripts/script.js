@@ -68,11 +68,23 @@ portfolioApp.hamburgerMenu = () => {
     }
 }
 
+portfolioApp.mouseCursor = () => {
+    $(document).on('mousemove', event => {
+        const xPos = event.pageX;
+        const yPos = event.pageY;
+        $('.cursor').css({
+            'top': yPos + 15,
+            'left': xPos + 15,
+        })
+    })
+}
+
 portfolioApp.init = () => {
     AOS.init();
     portfolioApp.scrambleText();
     portfolioApp.typedText();
     portfolioApp.hamburgerMenu();
+    portfolioApp.mouseCursor();
 }
 
 $(document).ready(function() {
