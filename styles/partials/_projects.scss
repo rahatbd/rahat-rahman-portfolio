@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 20px;
-        border-bottom: 1px solid $primaryTextColour;
+        border-bottom: 2px dotted $primaryTextColour;
 
         // div {
         //     border: 1px solid brown;
@@ -14,7 +14,7 @@
         }
         
         .description {
-            border-left: 1px solid $primaryTextColour;
+            border-left: 2px dotted $primaryTextColour;
             padding: 20px 0 40px 20px;
 
             h3 {

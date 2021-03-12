@@ -404,6 +404,7 @@ header .fa-mouse {
 }
 
 .about .aboutSection .profile img {
+  border: 5px solid #ababab;
   border-radius: 5px;
 }
 
@@ -486,7 +487,7 @@ header .fa-mouse {
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
   gap: 20px;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 2px dotted #fafafa;
 }
 
 .projects .project img {
@@ -494,7 +495,7 @@ header .fa-mouse {
 }
 
 .projects .project .description {
-  border-left: 1px solid #fafafa;
+  border-left: 2px dotted #fafafa;
   padding: 20px 0 40px 20px;
 }
 
@@ -854,7 +855,7 @@ header .fa-mouse {
   }
   .projects .project .description {
     border-left: none;
-    border-top: 1px solid #fafafa;
+    border-top: 2px dotted #fafafa;
     padding-left: 0;
   }
   .blog .post {

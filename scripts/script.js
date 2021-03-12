@@ -73,8 +73,8 @@ portfolioApp.mouseCursor = () => {
         const xPos = event.pageX;
         const yPos = event.pageY;
         $('.cursor').css({
-            'top': yPos + 15,
-            'left': xPos + 15,
+            'top': yPos + 18,
+            'left': xPos + 6,
         })
     })
 }
@@ -85,6 +85,7 @@ portfolioApp.init = () => {
     portfolioApp.typedText();
     portfolioApp.hamburgerMenu();
     portfolioApp.mouseCursor();
+    console.log('%c Welcome to my Portfolio!', 'background: #fafafa; color: #212121');
 }
 
 $(document).ready(function() {
