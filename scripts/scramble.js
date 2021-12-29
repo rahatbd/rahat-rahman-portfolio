@@ -1,8 +1,9 @@
  "use strict";
 
-// ——————————————————————————————————————————————————
+// ----------------------------------------------------------------------
 // TextScramble
-// ——————————————————————————————————————————————————
+// Refer original video here: https://www.youtube.com/watch?v=lI303Jm4fbs
+// ----------------------------------------------------------------------
 class TextScramble {
   constructor(el) {
     this.el = el;
@@ -76,5 +77,4 @@ class TextScramble {
   randomChar() {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
-
 }

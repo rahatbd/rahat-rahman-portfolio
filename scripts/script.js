@@ -16,7 +16,7 @@ portfolioApp.scrambleText = () => {
 
 portfolioApp.typedText = () => {
     const options = {
-        strings: ['a front-end developer', 'based in Toronto'],
+        strings: ['a web developer', 'based in Toronto', 'working at Q4'],
         typeSpeed: 60,
         backSpeed: 40,
         loop: true,
@@ -73,8 +73,8 @@ portfolioApp.mouseCursor = () => {
         const xPos = event.pageX;
         const yPos = event.pageY;
         $('.cursor').css({
-            'top': yPos + 18,
-            'left': xPos + 6,
+            'top': yPos + 20,
+            'left': xPos + 7,
         })
     })
 }

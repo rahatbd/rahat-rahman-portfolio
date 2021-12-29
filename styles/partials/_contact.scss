@@ -1,38 +1,34 @@
 .social {
     display: flex;
+    gap: 50px;
 
     form {
-        // border: 1px solid brown;
         display: flex;
         flex-direction: column;
         width: 100%;
-    
+
         input, textarea, button {
             border: 1px solid $primaryTextColour;
             background-color: transparent;
             color: $primaryTextColour;
             margin-bottom: 20px;
-    
+            padding: 5px 10px;
+
             &:focus {
                 outline: 2px solid $primaryTextColour;
             }
         }
-        
-        input {
-            padding: 5px 10px;
-        }
-    
+
         textarea {
             resize: none;
-            padding: 5px 10px;
         }
-    
+
         button {
             text-transform: uppercase;
             margin: 0 auto 0 0;
             padding: 5px 25px;
             cursor: pointer;
-    
+
             &:hover, &:active, &:focus {
                 @include hover;
             }
@@ -40,17 +36,10 @@
     }
 
     form + div {
-        // border: 1px solid brown;
-        padding-left: 50px;
-
         p {
             line-height: 1.3;
-            letter-spacing: 1px;
+            letter-spacing: 0.1rem;
             padding-bottom: 20px;
-        }
-
-        .top {
-            display: none;
         }
 
         a {
@@ -58,14 +47,11 @@
 
             i {
                 font-size: 4.5rem;
-
-                &:hover, &:active, &:focus {
-                    transform: scale(1.1);
-                }
             }
 
-            svg:hover, svg:active, svg:focus {
-                transform: scale(1.1);
+            &:last-child {
+                position: relative;
+                top: 2px;
             }
         }
     }

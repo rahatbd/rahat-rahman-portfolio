@@ -6,6 +6,7 @@
     header {
         ul {
             display: none;
+            gap: unset;
         }
 
         .hamburgerMenu {
@@ -62,14 +63,11 @@
     .about {
         .aboutSection {
             flex-direction: column;
+            gap: unset;
 
             .profile {
                 width: 50%;
                 margin: 0 auto 20px;
-            }
-
-            p {
-                margin: 0 10px;
             }
         }
     }
@@ -93,29 +91,22 @@
     }
 
     .blog {
-        .post {
-            margin: 0 auto;
+        .posts {
+            flex-direction: column;
+
+            .post {
+                margin: 0 auto;
+            }
         }
     }
 
     .social {
         flex-direction: column;
+        gap: unset;
 
         form {
             width: 100%;
             margin-bottom: 50px;
-        }
-
-        form + div {
-            padding-left: 0;
-
-            .left {
-                display: none;
-            }
-
-            .top {
-                display: unset;
-            }
         }
     }
 }
@@ -124,15 +115,6 @@
     .skills {
         .icons {
             justify-content: center;
-        }
-    }
-
-    .social {
-        form + div {
-            div {
-                display: flex;
-                justify-content: center;
-            }
         }
     }
 
@@ -150,6 +132,7 @@
             .description {
                 a {
                     display: block;
+                    text-align: center;
                     width: 60%;
                     margin: 0 auto;
 
@@ -171,6 +154,7 @@
 @media (max-width: 350px) {
     .heading {
         h1 {
+            font-size: 3.5rem;
             line-height: 1.15;
             margin-bottom: 10px;
         }

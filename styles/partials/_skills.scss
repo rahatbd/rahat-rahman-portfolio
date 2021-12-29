@@ -13,16 +13,8 @@
             justify-content: center;
             align-items: center;
 
-            i, .iconify {
+            i, img, .iconify {
                 padding-bottom: 10px;
-
-                &:hover, &:active, &:focus {
-                    transform: scale(1.1);
-
-                    path {
-                        transform: translateY(-1px) scale(1.1);
-                    }
-                }
             }
 
             i {
@@ -33,10 +25,20 @@
                 font-size: 7rem;
             }
 
+            .fa-code-branch {
+                position: relative;
+                right: 8px;
+                transform: rotate(90deg);
+            }
+
+            .agile {
+                padding-bottom: 5px;
+            }
+
             .fa-terminal {
                 animation: blink 1s ease infinite;
 
-                &:hover, &:active, &:focus {
+                &:hover {
                     animation: none;
                 }
             }

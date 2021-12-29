@@ -5,14 +5,10 @@
         gap: 20px;
         border-bottom: 2px dotted $primaryTextColour;
 
-        // div {
-        //     border: 1px solid brown;
-        // }
-
         img {
             padding: 20px 0;
         }
-        
+
         .description {
             border-left: 2px dotted $primaryTextColour;
             padding: 20px 0 40px 20px;
@@ -28,16 +24,13 @@
 
                 &:nth-of-type(2) {
                     text-transform: uppercase;
-                    letter-spacing: 2px;
+                    letter-spacing: 0.2rem;
                     padding-bottom: 30px;
                 }
             }
 
             a {
                 border: 1px solid $primaryTextColour;
-                background-color: transparent;
-                color: $primaryTextColour;
-                text-align: center;
                 padding: 5px 10px;
                 margin-right: 10px;
 
@@ -48,7 +41,7 @@
         }
     }
 
-    .projectFour {
+    .lastProject {
         border-bottom: none;
     }
 }

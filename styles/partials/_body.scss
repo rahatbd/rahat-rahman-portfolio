@@ -29,7 +29,6 @@ img {
     max-width: 1400px;
     width: 90%;
     margin: 0 auto;
-    // border: 1px solid brown;
 }
 
 h2 {
@@ -43,8 +42,8 @@ li {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
-    color: $primaryTextColour;
 }
 
 header, section {
@@ -67,7 +66,7 @@ section {
 
 footer {
     font-size: 1.6rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     text-align: center;
     padding: 10px 0;
 }

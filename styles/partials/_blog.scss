@@ -1,18 +1,23 @@
 .blog {
-    .post {
-        border: 1px solid $primaryTextColour;
+    .posts {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        width: 400px;
+        gap: 50px;
 
-        a {
-            font-size: 2.5rem;
-            border-bottom: 1px solid $primaryTextColour;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
+        .post {
+            border: 1px solid $primaryTextColour;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 400px;
+
+            a {
+                font-size: 2.5rem;
+                border-bottom: 1px solid $primaryTextColour;
+                padding-bottom: 5px;
+                margin-bottom: 20px;
+            }
         }
     }
 }
